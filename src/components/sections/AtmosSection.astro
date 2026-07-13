@@ -1,0 +1,270 @@
+---
+import SocialBtn from "../SocialBtn.astro";
+---
+
+<div
+  data-layer="Atmos"
+  id="projects"
+  class="Atmos w-full min-h-screen section-bg bg-[url('/atmos-bg.webp')] bg-cover bg-center overflow-hidden"
+>
+  <div
+    data-layer="darkAndBlur"
+    class="darkAndBlur bg-black/60 backdrop-blur-[8px] w-full min-h-screen flex justify-center items-center overflow-hidden"
+  >
+    <div
+      data-layer="Main container"
+      class="MainContainer container-inner w-full max-w-7xl px-4 md:px-8 py-16 md:py-24 flex flex-col justify-center items-center gap-16 md:gap-24"
+    >
+      <div
+        data-layer="Overview"
+        class="Overview w-full flex flex-col md:flex-row justify-between items-center gap-10 lg:px-6"
+      >
+        <div
+          data-layer="title"
+          class="Title flex-1 inline-flex flex-col justify-center items-start gap-10"
+        >
+          <div
+            data-layer="Project overview"
+            class="ProjectOverview self-stretch flex flex-col justify-start items-start gap-5"
+          >
+            <div
+              data-layer="Title + description"
+              class="TitleDescription size- flex flex-col justify-start items-start"
+            >
+              <div
+                data-layer="Title"
+                class="Title size- inline-flex justify-center items-center gap-3"
+              >
+                <div
+                  data-layer="logo 1"
+                  class="Logo1 w-24 h-16 relative overflow-hidden"
+                >
+                  <img
+                    loading="lazy"
+                    src="./logo.webp"
+                    alt="Logo"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div
+                  data-layer="Atmos"
+                  class="Atmos justify-start text-white text-4xl md:text-5xl font-normal font-['Inter']"
+                >
+                  Atmos
+                </div>
+              </div>
+              <div
+                data-layer="Real-time microclimate monitoring system"
+                class="RealTimeMicroclimateMonitoringSystem justify-start text-white text-body-lg font-normal font-['Inter'] mt-2"
+              >
+                Real-time microclimate monitoring system
+              </div>
+            </div>
+
+            <div
+              data-layer="Frame 23"
+              class="Frame23 size- flex flex-col justify-start items-start gap-3"
+            >
+              <div class="inline-flex justify-start items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-[#88ECFC]"></span>
+                <div class="text-white/80 text-body-lg font-['Inter']">
+                  3D-printed climate module
+                </div>
+              </div>
+              <div class="inline-flex justify-start items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-[#88ECFC]"></span>
+                <div class="text-white/80 text-body-lg font-['Inter']">
+                  Cross-platform dashboard app
+                </div>
+              </div>
+              <div class="inline-flex justify-start items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-[#88ECFC]"></span>
+                <div class="text-white/80 text-body-lg font-['Inter']">
+                  Database via Supabase
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <SocialBtn
+            href="https://github.com/cherenov/Atmos"
+            platform="github"
+            text="View on GitHub"
+          />
+        </div>
+
+        <img
+          loading="lazy"
+          data-layer="20260703_225540 1"
+          class="w-full max-w-[640px] h-auto rounded-sm object-cover"
+          src=".//atmos.webp"
+        />
+      </div>
+
+      <div
+        data-layer="Module"
+        class="Module self-stretch bg-stone-950/40 rounded-sm border border-white/5 flex flex-col p-6 md:p-10 gap-8"
+      >
+        <div
+          data-layer="Frame 26"
+          class="w-full flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+          <img
+            loading="lazy"
+            data-layer="20260703_225546 1"
+            class="w-full max-w-full md:max-w-[45%] h-auto max-h-[400px] object-contain rounded-sm"
+            src="./atmos-grid.webp"
+          />
+          <div
+            data-layer="Frame 25"
+            class="flex-1 inline-flex flex-col justify-center items-start gap-4"
+          >
+            <div class="text-white text-3xl font-normal font-['Inter']">
+              Atmos Climate Module
+            </div>
+            <div
+              class="text-white/70 text-body-lg font-normal font-['Inter'] leading-relaxed"
+            >
+              Компактний пристрій у 3D-друкованому корпусі, побудований на базі
+              мікроконтролера ESP32 та сенсора DHT11. Модуль у реальному часі
+              вимірює температуру та вологість повітря. Працює під керуванням
+              FreeRTOS (ESP-IDF), що забезпечує високу енергоефективність та
+              миттєву передачу даних через протокол MQTT. Живлиться від Type-C.
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-layer="Row 2"
+          class="w-full flex flex-wrap justify-center md:justify-start xl:justify-between items-center gap-x-4 gap-y-2 pt-4 border-t border-white/5 text-base font-['Inter']"
+        >
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">FreeRTOS</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">C/C++</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">ESP-IDF</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">EMQX Broker</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">OnShape</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">MQTT</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">Wi-Fi</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">ESP32</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        data-layer="App"
+        class="App self-stretch bg-stone-950/40 rounded-sm border border-white/5 flex flex-col p-6 md:p-10 gap-8"
+      >
+        <div
+          data-layer="Frame 26"
+          class="w-full flex flex-col md:flex-row-reverse justify-between items-center gap-8"
+        >
+          <div
+            data-layer="iPhone 11 Pro Max"
+            class="w-full max-w-[240px] flex justify-center shrink-0"
+          >
+            <img
+              loading="lazy"
+              src="./atmos-app.webp"
+              class="w-full h-auto object-contain max-h-[450px]"
+              alt="Atmos App UI"
+            />
+          </div>
+          <div
+            data-layer="Frame 25"
+            class="flex-1 inline-flex flex-col justify-center items-start gap-4"
+          >
+            <div class="text-white text-3xl font-normal font-['Inter']">
+              Atmos App
+            </div>
+            <div
+              class="text-white/70 text-body-lg font-normal font-['Inter'] leading-relaxed"
+            >
+              Сучасний додаток, розроблений на Flutter (Dart) для візуалізації
+              зібраних даних. Містить сторінку для моніторингу показників та
+              статусу підключення модуля в реальному часі, а також розділ з
+              інтерактивними графіками історії вимірювань. Дозволяє зручно
+              контролювати стан приміщення з будь-якого пристрою: Android, iOS
+              або ПК.
+            </div>
+          </div>
+        </div>
+        <div
+          data-layer="Row 2"
+          class="w-full flex flex-wrap justify-center md:justify-start xl:justify-between items-center gap-x-4 gap-y-2 pt-4 border-t border-white/5 text-base font-['Inter']"
+        >
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">Flutter</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">Riverpod</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">Supabase</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">Cross-platform</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">Real-time</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">Data analytics</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">State management</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sky-300 font-medium">[</span><span
+              class="text-white/40 px-1">MQTT</span
+            ><span class="text-sky-300 font-medium">]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
