@@ -1,0 +1,52 @@
+---
+// src/components/SocialButton.astro
+interface Props {
+  href: string;
+  platform: "github" | "behance";
+  text: string;
+}
+
+const { href, platform, text } = Astro.props;
+
+// Конфигурация стилей под каждую платформу
+const styles = {
+  github: {
+    btnClass: "bg-black/80 rounded-sm hover:bg-black hover:outline-amber-50/50",
+    iconSrc: "./github.webp",
+    iconClass: "",
+    textClass: "text-white",
+  },
+  behance: {
+    btnClass:
+      "bg-blue-600 rounded-full hover:bg-white shadow-md hover:shadow-xl",
+    iconSrc: "./behance.webp",
+    iconClass:
+      "group-hover:brightness-0 group-hover:invert-[31%] group-hover:sepia-[94%] group-hover:saturate-[4582%] group-hover:hue-rotate-[213deg]",
+    textClass: "text-white group-hover:text-blue-600",
+  },
+};
+
+const currentStyle = styles[platform];
+---
+
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  data-layer="Button"
+  class={`Button group h-14 px-6 inline-flex justify-center items-center gap-4 overflow-hidden outline outline-1 outline-transparent transition-all duration-300 ease-out hover:scale-105 active:scale-95 ${currentStyle.btnClass}`}
+>
+  <div
+    data-layer="image"
+    class={`w-8 shrink-0 transition-all duration-300 ${currentStyle.iconClass}`}
+  >
+    <img src={currentStyle.iconSrc} alt={platform} class="w-full h-auto" />
+  </div>
+
+  <div
+    data-layer={text}
+    class={`text-base md:text-lg font-medium font-['Inter'] transition-colors duration-300 ${currentStyle.textClass}`}
+  >
+    {text}
+  </div>
+</a>
